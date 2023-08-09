@@ -1,0 +1,291 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-Black.woff2") format("woff2"), url("../assets/fonts/Raleway-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+}
+
+body {
+  background: #F8F8F8;
+}
+
+button {
+  width: 12.4931205283vw;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.880572372vw;
+  border-radius: 0.8255365988vw;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 0.7705008255vw;
+  padding: 1.1007154651vw 1.3758943313vw;
+  background: #FEFEFE;
+  border-bottom: 0.0550357733vw solid #DFDFDF;
+  letter-spacing: 0.0121078701vw;
+  font-size: 1.2107870116vw;
+}
+header svg {
+  width: 2.9719317556vw;
+}
+
+main {
+  padding: 3.2471106219vw 0 9.3010456797vw 0;
+}
+main .container {
+  max-width: 66.0429279031vw;
+  margin: 0 auto;
+}
+main .container .tasks {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(15.244909191vw, 1fr));
+  gap: 1.6510731976vw;
+}
+main .container .tasks .card {
+  position: relative;
+  padding: 1.3758943313vw;
+  border: 0.0550357733vw solid #DFDFDF;
+  background: #fff;
+  border-radius: 0.8255365988vw;
+  height: 19.9779856907vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9356081453vw;
+}
+main .container .tasks .card .date {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .container .tasks .card .date .icon {
+  padding: 0.440286186vw 0.3852504128vw;
+  border-radius: 50%;
+  border: 0.0550357733vw solid #DFDFDF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container .tasks .card .date .icon svg {
+  width: 0.7705008255vw;
+}
+main .container .tasks .card .date .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.8503026968vw;
+  color: #353535;
+  font-size: 0.7705008255vw;
+  font-weight: 600;
+}
+main .container .tasks .card .date .more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5.5035773253vw;
+  cursor: pointer;
+}
+main .container .tasks .card .date .more svg {
+  width: 0.220143093vw;
+}
+main .container .tasks .card .info {
+  color: #353535;
+}
+main .container .tasks .card .info h1 {
+  font-size: 1.2107870116vw;
+  font-weight: 800;
+  letter-spacing: 0.0121078701vw;
+  padding-bottom: 0.5503577325vw;
+}
+main .container .tasks .card .info p {
+  font-size: 0.7705008255vw;
+  font-weight: 500;
+  line-height: 1.1007154651vw;
+}
+main .container .tasks .card .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 1.3758943313vw;
+  width: 100%;
+}
+main .container .tasks .card .footer button {
+  padding: 1.0456796918vw 1.7611447441vw;
+  background: #C63031;
+  transition: 0.3s;
+}
+main .container .tasks .card .footer button:hover {
+  color: #353535;
+  background: #00FFC7;
+}
+main .container .tasks .card.complete {
+  border-color: #00FFC7;
+}
+main .container .tasks .card.complete .info h1 {
+  text-decoration: line-through;
+}
+main .container .tasks .card.complete .footer button {
+  background: #00FFC7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.660429279vw;
+  font-style: normal;
+  font-weight: 700;
+  color: #353535;
+  gap: 0.5503577325vw;
+  transition: none;
+}
+main .container .tasks .card.complete .footer button div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 0;
+}
+main .container .tasks .card.hide {
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.3s;
+}
+main .container .tasks .card .dropdown {
+  width: 9.1909741332vw;
+  padding: 0.7705008255vw 0;
+  box-shadow: 0 1.1007154651vw 1.6510731976vw rgba(73, 73, 73, 0.1);
+  border-radius: 0.8255365988vw;
+  position: absolute;
+  border: 0.0550357733vw solid #DFDFDF;
+  background: #fff;
+  top: -0.5503577325vw;
+  left: 15.685195377vw;
+  transform: scale(0);
+  transition: 0.3s ease;
+  z-index: 999;
+}
+main .container .tasks .card .dropdown .select {
+  padding: 0.6053935058vw 3.7424325812vw 0.5503577325vw 1.0456796918vw;
+  cursor: pointer;
+  font-size: 0.660429279vw;
+  transition: 0.3s;
+}
+main .container .tasks .card .dropdown .select:hover {
+  background: #F5F5F5;
+}
+main .container form {
+  padding: 0 14.6395156852vw 0 14.6395156852vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3758943313vw;
+}
+main .container form h1 {
+  text-align: center;
+  color: #353535;
+  font-size: 1.5410016511vw;
+}
+main .container form input {
+  padding: 0.9906439185vw 1.1007154651vw;
+  border: 0.0550357733vw solid #DFDFDF;
+  border-radius: 0.8255365988vw;
+  outline: none;
+  color: #353535;
+  font-style: normal;
+  font-weight: 500;
+}
+main .container form input::-moz-placeholder {
+  color: #9A9A9A;
+}
+main .container form input::placeholder {
+  color: #9A9A9A;
+}
+main .container form textarea {
+  border-radius: 0.8255365988vw;
+  padding: 1.9812878371vw 1.1007154651vw;
+  height: 6.9345074298vw;
+  outline: none;
+  resize: none;
+  border: 0.0550357733vw solid #DFDFDF;
+}
+main .container form textarea::-moz-placeholder {
+  color: #9A9A9A;
+}
+main .container form textarea::placeholder {
+  color: #9A9A9A;
+}
+main .container form .btns {
+  padding-top: 3.3571821684vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.4122179417vw;
+}
+main .container form .btns button {
+  padding: 1.0456796918vw;
+}
+main .container form .btns button:first-child {
+  background: #C63031;
+  color: #fff;
+}
+main .container form .btns button:last-child {
+  background: none;
+  border: 0.0550357733vw solid #DFDFDF;
+  color: #353535;
+}
+
+.add {
+  width: 3.0820033021vw;
+  height: 3.0820033021vw;
+  border-radius: 50%;
+  background: #353535;
+  position: fixed;
+  z-index: 999;
+  right: 1.5410016511vw;
+  bottom: 1.1557512383vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.add svg {
+  width: 1.2107870116vw;
+}
+
+.link {
+  padding: 1.2107870116vw 0 0 1.8712162906vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.0456796918vw;
+  font-size: 1.3208585581vw;
+  color: #9A9A9A;
+}
+.link .home {
+  width: 2.2014309301vw;
+  height: 1.9812878371vw;
+  border-radius: 0.660429279vw;
+  border: 0.0550357733vw solid #DFDFDF;
+  background: #fff;
+  transition: 0.3s;
+}
+.link .home svg {
+  width: 0.660429279vw;
+}
+.link .home:hover {
+  border: none;
+}
+.link .home:hover svg path {
+  fill: #000;
+}
+
+.form {
+  padding: 3.8525041277vw 0 3.4122179417vw 0;
+}/*# sourceMappingURL=styles.css.map */

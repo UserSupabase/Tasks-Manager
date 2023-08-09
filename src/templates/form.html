@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/icon.png">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Tasks Manager</title>
+</head>
+<body>
+    <header>
+        <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="27" cy="27" r="27" fill="#FFEFEF"/>
+            <g clip-path="url(#clip0_6_32)">
+            <path d="M27 41.1429C19.2014 41.1429 12.8571 34.7985 12.8571 27C12.8571 19.2015 19.2014 12.8571 27 12.8571C29.6418 12.8571 32.2186 13.5903 34.4523 14.9777C34.8427 15.22 34.9623 15.733 34.7201 16.1234C34.4774 16.5138 33.9644 16.6343 33.5744 16.3912C31.6046 15.1675 29.3311 14.5211 27 14.5211C20.119 14.5211 14.521 20.1193 14.521 27.0001C14.521 33.8809 20.119 39.479 27 39.479C33.8808 39.479 39.479 33.8808 39.479 27C39.479 25.6169 39.2545 24.259 38.8117 22.9639C38.6631 22.5292 38.8954 22.0561 39.33 21.9075C39.7654 21.7597 40.2377 21.9911 40.3864 22.4257C40.8881 23.8946 41.1429 25.4337 41.1429 27.0001C41.1428 34.7985 34.7985 41.1429 27 41.1429Z" fill="#C63031"/>
+            <path d="M26.9995 31.7985C26.7885 31.7985 26.5844 31.7184 26.43 31.5728L19.7745 25.3208C19.4396 25.0062 19.4231 24.4797 19.7377 24.1448C20.0523 23.8103 20.5788 23.793 20.9137 24.1084L26.929 29.7591L37.8593 16.7835C38.1548 16.4321 38.68 16.387 39.0314 16.6834C39.3828 16.9793 39.4278 17.504 39.1315 17.8554L27.6356 31.5026C27.4887 31.6772 27.276 31.7839 27.0481 31.7973C27.0321 31.7981 27.0156 31.7985 26.9995 31.7985Z" fill="#C63031"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_6_32">
+            <rect width="28.2857" height="28.2857" fill="white" transform="translate(12.8571 12.8571)"/>
+            </clipPath>
+            </defs>
+        </svg>
+        TASKS MANAGER
+    </header>
+    <section class="link">
+        <button class="home">
+            <svg viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.54181 0.860628C8.8096 1.10164 8.8096 1.49239 8.54181 1.7334L4.91239 4.99987L8.54181 8.26634C8.8096 8.50735 8.8096 8.8981 8.54181 9.13911C8.27402 9.38012 7.83985 9.38012 7.57206 9.13911L2.9729 4.99987L7.57206 0.860628C7.83985 0.619618 8.27402 0.619618 8.54181 0.860628Z" fill="#9A9A9A"/>
+            </svg>
+        </button>
+        <p>На Главную</p>
+    </section>
+    <main class="form">
+        <section class="container">
+            <form>
+                <h1 id="titlePage">Создать задачу</h1>
+                <input type="text" placeholder="Введите заголовок задачи" id="titleInput">
+                <input type="date" id="dateInput">
+                <textarea placeholder="Описание задачи" id="descriptionInput"></textarea>
+                <div class="btns">
+                  <button type="button" id="createTaskButton">Создать задачу</button>
+                  <button type="button" class="back">Отмена</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="../scripts/script.js" defer></script>
+</body>
+</html>
